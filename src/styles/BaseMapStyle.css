@@ -1,0 +1,57 @@
+.dropdown {
+    position: absolute;
+    bottom: 120px;
+    left: 40px;
+    z-index: 1000;
+  }
+  
+  .dropdown-button {
+    background-color: #ffffff;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 0; /* Aligns with the button */
+    left: 100%; /* Moves it to the right side of the button */
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 10px;
+    padding: 2px;
+    margin-left: 10px; /* Adds some spacing from the button */
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* .dropdown-content a:hover {
+    background-color: #f1f1f1;
+    border-radius: 10px;
+  } */
+  
+  .dropdown.open .dropdown-content {
+    display: flex;
+    
+  }
+  
+
+  /* 👇 Add active styling */
+.dropdown-content a.active {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    font-weight: bold;
+    border-radius: 10px;
+}

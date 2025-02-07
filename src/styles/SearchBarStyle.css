@@ -1,0 +1,26 @@
+.search-bar {
+    position: absolute;
+    top: 30px;
+    left: 40px; /* ✅ Moved to right */
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    width: 280px;
+  }
+  
+  .search-bar input {
+    border: none;
+    outline: none;
+    font-size: 14px;
+    padding: 5px;
+    flex: 1;
+  }
+  
+  .search-bar svg {
+    cursor: pointer;
+  }
+  
